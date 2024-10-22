@@ -24,6 +24,11 @@
       "id": 5,
       "task": "d",
       "complete": false
+    },
+    {
+      "id": 6,
+      "task": "Run this program with Deno 2",
+      "complete": false
     }
   ]
 }
