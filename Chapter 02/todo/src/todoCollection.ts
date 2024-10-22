@@ -22,7 +22,11 @@ export class TodoCollection {
     }
 
     getTodoById(id: number) : TodoItem {
-        return this.itemMap.get(id);
+        const item = this.itemMap.get(id);
+        if (!item) {
+            throw new Error(`TodoItem with id ${id} not found`);
+        }
+        return item;
     }
 
     getTodoItems(includeComplete: boolean): TodoItem[] {
